@@ -1,0 +1,20 @@
+{
+  "name": "thatoseluku",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://ThatoSeluku.github.io/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "gh-pages": "^6.3.0"
+  }
+}
