@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes - Thato Seluku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:/Users/Thato/OneDrive/Desktop/Work/ThatoSeluku.com/assets/style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="prototype-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+                <a href="prototype.html" class="nav-link active">Prototypes</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="prototype-intro">
+        <div class="container">
+            <h1 class="page-title fade-in">Prototypes</h1>
+            <p class="page-subtitle fade-in">A collection of my Power Platform and React projects.</p>
+        </div>
+    </section>
+
+    <!-- Project 1: 99 Tickets -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-layout">
+                <div class="project-iframe slide-up">
+                    <iframe src="https://www.youtube.com/embed/BEzyDdpTZno" title="99 Tickets App Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="project-content slide-up">
+                    <h2 class="project-title">99 Tickets</h2>
+                    <p class="project-description">
+                        A comprehensive ticketing system built with Power Apps and Power Automate.
+                        Features automated workflows, real-time tracking, and seamless integration
+                        with existing business processes.
+                    </p>
+                    <a href="https://thatoseluku.github.io/DemoTicketManagementApp/" class="btn-secondary" target="_blank">
+                        View App
+                    </a>
+                    <button class="btn-primary gtm-button" data-project="99tickets">
+                        Go to Market?
+                    </button>
+                    <div class="gtm-score" id="score-99tickets">
+                        <p class="score-text">No votes yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2: Nail Appointment App -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-layout reverse">
+                <div class="project-content slide-up">
+                    <h2 class="project-title">Nail Appointment App</h2>
+                    <p class="project-description">
+                        Modern appointment booking system with calendar integration, automated
+                        reminders, and client management. Built using Power Apps with a sleek,
+                        user-friendly interface optimized for mobile devices.
+                    </p>
+                    <a href="https://thatoseluku.github.io/DemoNailAppointmentApp/" class="btn-secondary" target="_blank">
+                        View App
+                    </a>
+                    <button class="btn-primary gtm-button" data-project="nailapp">
+                        Go to Market?
+                    </button>
+                    <div class="gtm-score" id="score-nailapp">
+                        <p class="score-text">No votes yet</p>
+                    </div>
+                </div>
+                <div class="project-iframe slide-up">
+                    <img src="assets/images/nailedit.png" alt="Nail Appointment App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Thato Seluku — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Go to Market Modal -->
+    <div id="gtm-modal" class="gtm-modal">
+        <div class="gtm-modal-content">
+            <button class="gtm-close">&times;</button>
+            <div class="gtm-progress">
+                <div class="gtm-progress-bar" id="gtm-progress-bar"></div>
+            </div>
+            <h2 id="gtm-question-title">Go to Market Survey</h2>
+
+            <!-- Step 1 -->
+            <div class="gtm-step" id="step-1">
+                <p class="gtm-question">Do you think this solution is valuable?</p>
+                <div class="gtm-rating">
+                    <button class="rating-btn" data-value="1">1</button>
+                    <button class="rating-btn" data-value="2">2</button>
+                    <button class="rating-btn" data-value="3">3</button>
+                    <button class="rating-btn" data-value="4">4</button>
+                    <button class="rating-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="gtm-step" id="step-2" style="display: none;">
+                <p class="gtm-question">Do you see it necessary in the current market?</p>
+                <div class="gtm-rating">
+                    <button class="rating-btn" data-value="1">1</button>
+                    <button class="rating-btn" data-value="2">2</button>
+                    <button class="rating-btn" data-value="3">3</button>
+                    <button class="rating-btn" data-value="4">4</button>
+                    <button class="rating-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="gtm-step" id="step-3" style="display: none;">
+                <p class="gtm-question">How likely would you be to use it?</p>
+                <div class="gtm-rating">
+                    <button class="rating-btn" data-value="1">1</button>
+                    <button class="rating-btn" data-value="2">2</button>
+                    <button class="rating-btn" data-value="3">3</button>
+                    <button class="rating-btn" data-value="4">4</button>
+                    <button class="rating-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <!-- Thank you message -->
+            <div class="gtm-step" id="step-thankyou" style="display: none;">
+                <p class="gtm-thankyou">Thank you! Your feedback has been recorded.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:/Users/Thato/OneDrive/Desktop/Work/ThatoSeluku.com/assets/script.js"></script>
+    <script src="C:/Users/Thato/OneDrive/Desktop/Work/ThatoSeluku.com/assets/gtm.js"></script>
+</body>
+</html>
